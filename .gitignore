@@ -114,4 +114,5 @@ fairseq/temporal_convolution_tbc
 
 # data
 data
+output
 data-bin/

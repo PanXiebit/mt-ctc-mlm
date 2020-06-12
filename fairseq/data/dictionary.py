@@ -21,6 +21,7 @@ class Dictionary(object):
 
     def __init__(
         self,
+        blank='<->',
         pad='<pad>',
         eos='</s>',
         unk='<unk>',
@@ -32,6 +33,7 @@ class Dictionary(object):
         self.symbols = []
         self.count = []
         self.indices = {}
+        self.blank_index = self.add_symbol(blank)
         self.bos_index = self.add_symbol(bos)
         self.pad_index = self.add_symbol(pad)
         self.eos_index = self.add_symbol(eos)
